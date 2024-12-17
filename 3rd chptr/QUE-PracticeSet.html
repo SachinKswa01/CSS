@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--1.create a heading at the center and make capitalized
+        2.use font family for the whole page to TimeNewRoman
+        3.create one div inside another div.
+         set id and text outer to outer div
+         set id and text inner to inner div
+         set outer div text size ot 25px and inner to 10px
+        4.make a icon of add_circle-->
+    <title>practice set</title>
+
+    <style>
+         *{margin: 0; padding:0;
+        font-family: 'Times New Roman', Times, serif;
+        }
+
+        #h1{
+            background-color: aquamarine;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #outer{font-size:  25px;}
+        #inner{font-size:  10px;}
+    </style>
+    
+<!--now making icon -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_circle" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    </style>
+</head>
+<body>
+    <h1 id="h1">ThIs is hEadiNg</h1>
+    <div id="outer">OuteR
+        <div id="inner">InnEr</div>
+    </div>
+   <!--it is for icon-->
+    <span class="material-symbols-outlined">
+        add_circle
+        </span>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>responsive property</title>      <!--means how show in different screens like phone, web, tablate, iphone, samsang , galaxy etc.-->
+    <style>
+    *{
+        margin: 0; padding: 0;
+        font-size: 10px;
+     }
+        #first{
+            height: 200px;
+            width: 100px;
+            background-color: crimson;
+            font-size: 14px;
+        }
+        #second{                /*height and width in "%" because second is 'child' type div ....% is relative to parent.*/
+            height: 50%;
+            width: 70%;
+            background-color: aqua;
+            font-size: 2em;       /*font size is maintain by its parent cell...."em" means child font size is (2em)*2 times of its parent...means as we increase parent font size chil font also increase by 2x*/
+        }
+        #third{
+            height: 50%;
+            width: 70%;
+            background-color: rgb(68, 0, 255);
+            font-size: 2rem;        /*"root element" == (2rem)=50x2 px times of body font*/
+        }
+        #veiw{
+            height: 50vh;
+            width: 50vw;
+            background-color: darkgreen;
+
+        }
+    </style>
+</head>
+<body><div id="veiw">vwidth/vheight</div>
+    Body font
+    <div id="first">parent
+        <div id="second">child</div>
+        <div id="third">child2</div>
+    </div>
+    
+</body>
+</html>

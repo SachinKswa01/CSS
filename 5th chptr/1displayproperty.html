@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>display property </title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: greenyellow;
+
+            display: block ;                 /* default display is block type so boxes are vertically */         
+           
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: greenyellow;
+
+            display: inline;            /*In "inline" boxes are horizonty...but we can't make there height easily*/
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: greenyellow;
+
+            display: inline-block;      /* "inline" boxes take height with using "inline-block" property...*/
+
+        }
+        .box3{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: greenyellow;
+
+            display: inline-block; 
+        }
+        #box7{
+            display: none;          /*this property cut the box with its space no space is remain after cutting....in "hidden" property box cutted but space is remain*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box1</div>
+    <div id="box2" class="box">Box2</div>
+    <hr>
+    <div id="box3" class="box1">Box3</div>
+    <div id="box4" class="box1">Box4</div>
+    <hr>
+    <div id="box5" class="box2">Box5</div>
+    <div id="box6" class="box2">Box6</div>
+    <hr>
+    <div id="box7" class="box3">Box7</div>
+    <div id="box8" class="box3">Box8</div>
+</body>
+</html>

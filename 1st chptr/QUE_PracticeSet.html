@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--1.create a heading and set the text color red
+        2.a div with id #heading, include CSS using all 3 ways line, style tag, external
+        3.add comments
+        4.creat a div, paragraph and heading and use id selector, element selector and class selector for them
+        5.creat two divs with id first and second and define color for both using group selector-->
+<head>
+    <title>Color property</title>
+    <style>
+        h1{color: red;}
+    </style>
+
+    <link rel="stylesheet" href="QUE_PracticeSet.css"> <!--periority -->
+    
+    <style>                /*--periority--*/                          
+        #heading{ color: red; }
+
+        #div01{ color: blueviolet;}
+
+        p{ color: chocolate;}
+
+        .first { color: crimson;}
+
+        #first, #second{ color: rgb(57, 120, 238);}
+    </style>  
+    
+</head>
+<body>
+   <h1>this is red colored heading</h1>
+   <hr>
+   <div id="heading" style="color: rgb(94, 2, 79);"> heading  </div>         <!--periority of style is on top at inline -->
+   <hr>
+   <!-- this is my commment-->
+   <hr>
+   <div id="div01">DIV</div>
+   <hr>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, vitae.</p>
+   <hr>
+   <h1 class="first"> class heading</h1>
+   <hr>
+   <div id="first">first</div>
+   <div id="second">second</div>
+</body>
+</html>

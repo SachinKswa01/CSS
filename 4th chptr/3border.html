@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>border</title>
+    <style>
+        *{margin: 0;
+            padding: 0;}
+            /*this box have border with smal border with color...default color is black*/
+        #box{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid rgb(229, 16, 16);
+            background-color: mediumpurple;
+            }
+            /*this box have border radius also that make box corved*/
+            #box1{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            padding: 20px;
+            border: 10px dashed rgb(229, 16, 16);
+            border-radius: 10px;
+            background-color: mediumpurple;
+            }
+            /*the radius of all corners is changed differently as we want*/
+            #box2{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            padding: 20px;
+            border: 11px dotted rgb(229, 16, 16);
+            border-radius: 60px 15px 1px 100px;
+            background-color: mediumpurple;
+            }
+            /*this box contain "box-sizing= border-box" which works to maintain the size of box that means the border is made in box only not take any extra area that make box big in size.*/
+            #box3{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            padding: 20px;
+            border: 5px dotted rgb(229, 16, 16);
+            border-radius: 30px ;
+            box-sizing: border-box;
+            background-color: mediumpurple;
+            }
+           
+    </style>
+</head>
+<body>
+    <div id="box">border checker</div>
+    <div id="box1">border corved</div>
+    <div id="box2">box corved</div>
+    <div id="box3">box size</div>
+</body>
+</html>

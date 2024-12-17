@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--1.Create a div abr with text and bg color eith opacity
+        2.change the color of the main content
+        3.add bg image to one div
+        4. use bg shorthand property-->
+    <title>Practice Set</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        #bar{
+            background-color: red;
+            color: aquamarine;
+        }
+        main{
+            height: 500px;
+            width: 500px;
+            background-color: rgb(243, 126, 10);
+        }
+        #product{
+            height: 200px;
+            width: 400px;
+            background-image: url(mnntra.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: blue;
+
+            /* Shor hand for these == color, image, repeat, attachment, position;*/
+            /* background: red url(mnntra.png) no-repeat center; */
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <header><div id="bar">this is abr</div></header>
+    <main>
+        <div id="product">product 1</div>
+    </main>
+</body>
+</html>

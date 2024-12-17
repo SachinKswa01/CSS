@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>position property</title>
+<style>
+    .box{
+        height: 50px;
+        width: 50px;
+        background-color: darkorchid;
+        margin: 2px;
+    }
+    #box1{          /*As u give like block. inline ect*/
+        position: static;
+    }
+    #box2{          /*relative to itself...u give any side like top, bottom then it take distance from itself*/
+        position: relative;
+        top: 15px;
+        left: 50px;
+    }
+    #box3{             /*relative to page...it take distance from page */
+        position: absolute;
+        top: 20px;
+        left: 70px;        
+    }
+    #box4{      /*by it we take the box outside of the page no effect of page on it like scrolling, copying ect*/
+        position: fixed;        
+        left: 50px;    /*scroll*/
+        font-size: 12px;
+    }
+
+    .zbox3, .zbox4{
+        position: absolute;
+        height: 30px;
+        width: 30px;
+       border: 3px solid rgb(187, 255, 0);
+        text-align: center;
+        font-size: 15px;
+    }
+    .zbox3{                         /*z-index means to above some screen like a popup*/
+        background-color: aqua;
+        left: 130px;
+        top: 60px;
+        z-index: 3;
+    }
+    .zbox4{
+        background-color: rgb(0, 0, 255);
+        left: 150px;
+        top: 40px;
+        z-index: 1;
+    }
+</style>
+</head>
+<body>
+    <div id="box1"class="box">BOx1</div>
+    <div id="box2"class="box">BOx2</div>
+    <div id="box3"class="box">BOx3</div>
+    <div id="box4"class="box">scroll to show effect</div>
+    <!-- these below are only for scrolling the page ..for scrolling u take the page at 250 -300% zoom-->
+<div class="box">BOx4</div><div class="box">BOx4</div><div class="box">BOx4</div><div class="box">BOx4</div><div class="box">BOx4</div>
+    <div id="zbox1" class="zbox3">Z index1</div>
+    <div id="zbox2" class="zbox4">Z index2</div>
+</body>
+</html>

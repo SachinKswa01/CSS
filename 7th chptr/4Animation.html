@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 80px;
+            width: 80px;
+            background-color: blueviolet;
+            border: 3px solid;
+            border-radius: 15px;
+            position: relative;
+
+            animation-name: gamechanger;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.5s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+
+            /* we also write these all in this formate:  */
+            /* animation: gamechanger 1.5s ease-in-out 0.5s infinite alternate-reverse */
+        }
+
+        @keyframes gamechanger {
+           0%{left: 50px; top: 10px;}
+           50%{left: 100px; top: 50px;}
+           100%{left:200px; top: 100px;}
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Animate</div>
+</body>
+</html>
